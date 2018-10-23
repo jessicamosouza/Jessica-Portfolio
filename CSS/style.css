@@ -1,0 +1,181 @@
+/* Base Styles -------------------- */
+html {
+  margin: 0 5em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: #26a69a url('../img/desk.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding-top: 2px;
+  margin-bottom: 1.5px;
+  min-width: 500px;
+  display: block;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: .03125em;
+  font-weight: normal;
+  font-family: 'Niramit', sans-serif;
+  line-height: 1.3;
+}
+
+h4 {
+  font-family: 'Niramit', sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: .03125em;
+  line-height: 1.1;
+}
+
+nav {
+  text-align: right;
+  background-color: white;
+  text-decoration: overline;
+  font-family: 'News Cycle', sans-serif;
+}
+
+
+body {
+    color: #878787;
+    margin: 0;
+    font-family: 'News Cycle', sans-serif;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
+
+article {
+  font-size: 0.815rem;
+  text-align: justify;
+  font-weight: 400;
+  font-family: 'News Cycle', sans-serif;
+  margin: 5px;
+  display: block;
+  font-size: .7rem;
+  text-align: right;
+  padding: 2px;
+}
+
+footer {
+  font-size: 0.815rem;
+  text-align: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  font-weight: 400;
+  font-family: 'News Cycle', sans-serif;
+}
+
+/* Main Styles --------------------- */
+/* Layout Styles ------------------ */
+
+.line-title {
+  color: white;
+}
+
+.title:hover {
+  color: white;
+  text-shadow: .5px .5px 1px #cfcfcf;
+  transform: scale(1.2);
+}
+
+.group {
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 50px;
+    max-width: 960px;
+}
+
+.perfil-pic {
+    display: block;
+    max-width: 90%;
+    min-width: 70%;
+}
+
+.rotate-icon:hover {
+  transition: all 0.7s;
+  transform: scale(1.2) rotate(360deg);
+}
+
+.perfil-pic:hover {
+  transition: all 0.7s;
+  transform: scale(1.2);
+}
+
+.socials {
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hello {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: 'Niramit', sans-serif;
+  margin-top: 0;
+}
+
+.hello:hover {
+  color: #38786a;
+  text-shadow: .5px .5px 1px #cfcfcf;
+  transform: scale(1.1);
+}
+
+.p-hover:hover {
+  transform: scale(1.05);
+  background-color: #fafafa;
+}
+
+.right-side {
+  border-left: black solid 2px;
+  padding-left: 10px;
+  display: inline-grid;
+  position: relative;
+}
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #00756c;
+  text-decoration: none;
+}
+
+a:visited {
+   color: #455a64;
+}
+
+a:active {
+  color: #00251a;
+}
+
+a:hover {
+  color: #63d7cb;
+  text-shadow: .5px .5px 1px #cfcfcf;
+}
+
+/* Floated Columns ------------------ */
+
+.left-side,
+.right-side {
+  width: 50%;
+  float: left;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
